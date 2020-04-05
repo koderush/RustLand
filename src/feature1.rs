@@ -5,9 +5,10 @@ pub fn calculate_fab(n: i32)
     
     while b <= n
     {
-        let c = a + b;
-        print!("{} ", c);
-        a = b;
-        b = c;
+        a = a + b;
+        print!("{} ", a);
+        a ^= b;
+        b ^= a;
+        a ^= b;
     }
 }
