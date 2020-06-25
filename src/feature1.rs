@@ -11,4 +11,6 @@ pub fn calculate_fab(n: i32)
         b ^= a;
         a ^= b;
     }
+
+    println!();
 }
