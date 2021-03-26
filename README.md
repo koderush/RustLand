@@ -8,3 +8,6 @@ A Rust playground.
 
 # Run
 `cargo run`
+
+# Debug
+Need to install `CodeLLDB`
