@@ -6,6 +6,10 @@ A Rust playground.
 
 `sudo apt install gcc`
 
+`sudo apt install pkg-config`
+
+`sudo apt install libssl-dev`
+
 # Run
 `cargo run`
 
