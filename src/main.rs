@@ -1,9 +1,14 @@
 use std::io;
 
 mod feature1;
+mod database;
 
 fn main() {
     feature1::calculate_fab(35000000);
+
+    let records = database::get_edrsystem_records();
+
+    println!("Found {} edr.edrsystem records", records.unwrap().len());
 
     println!("Please input your guess.");
 

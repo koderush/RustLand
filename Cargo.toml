@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 rand = "0.8.0"
 tungstenite = "0.13.0"
+mysql = "*"
