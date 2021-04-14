@@ -40,7 +40,7 @@ sudo yum install patchelf
 [kyou@kyou-dev-c7]$ patchelf --set-interpreter /opt/glibc-2.18/lib/ld-linux-x86-64.so.2 ~/.vscode/extensions/vadimcn.vscode-lldb-1.6.1/lldb/bin/lldb-server 
 [kyou@kyou-dev-c7]$ patchelf --set-interpreter /opt/glibc-2.18/lib/ld-linux-x86-64.so.2 ~/.vscode/extensions/vadimcn.vscode-lldb-1.6.1/lldb/bin/lldb
 ```
-4. Add the below content to `~/.bashrc`
+4. To launch `vscode`, go to the project folder and use:
 ```
-LD_PRELOAD=/usr/lib64/libgcc_s.so.1
+[kyou@kyou-dev-c7 my_proj]$ LD_PRELOAD=/lib64/libgcc_s.so.1 code .
 ```
